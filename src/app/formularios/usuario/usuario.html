@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de Usuario</title>
+</head>
+<body>
+    <div class="container mt-4">
+  <div class="card shadow">
+    <h3>Iniciar Sesión</h3>
+
+<form>
+  <div>
+    <label for="usuario">Usuario:</label>
+    <input 
+      type="text" 
+      id="usuario" 
+      [(ngModel)]="usuario_ingresado" 
+      name="usuario_ingresado" 
+      placeholder="Ingresa tu usuario">
+  </div>
+
+  <br>
+
+  <div>
+    <label for="contrasena">Contraseña:</label>
+    <input 
+      type="password" 
+      id="contrasena" 
+      [(ngModel)]="contrasena_ingresada" 
+      name="contrasena_ingresada" 
+      placeholder="Ingresa tu contraseña">
+  </div>
+
+  <br>
+
+  <button 
+    type="button" 
+    (click)="validarAcceso()">
+    Validar Acceso
+  </button>
+</form>
+
+<p *ngIf="resultado">{{ resultado }}</p>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Áreas</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <form>
+                    <div class="form-group pt-4">
+                        <label for="num1">Valor 1 (Base / Radio / Perímetro): </label>
+                        <input [(ngModel)]="num1" name="num1" type="text" id="num1" class="form-control" placeholder="Ingrese valor 1">
+                    </div>
+                    
+                    <div class="form-group pt-4">
+                        <label for="num2">Valor 2 (Altura / Apotema): </label>
+                        <input [(ngModel)]="num2" name="num2" type="text" id="num2" class="form-control" placeholder="Ingrese valor 2 (opcional para círculo)">
+                    </div>
+                    
+                    <br>
+
+                    <label>Seleccione una figura:</label>
+                    <div>
+                        <input type="radio" name="figura" value="triangulo" [(ngModel)]="figura">
+                        <label>Triángulo</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="figura" value="rectangulo" [(ngModel)]="figura">
+                        <label>Rectángulo</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="figura" value="circulo" [(ngModel)]="figura">
+                        <label>Círculo</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="figura" value="pentagono" [(ngModel)]="figura">
+                        <label>Pentágono</label>
+                    </div>
+                    
+                    <br>
+
+                    <button (click)="calcular()" type="button" class="btn btn-primary">Calcular Áreas</button>
+                </form>
+            </div>
+
+            <div class="col-6">
+                <h2>Resultado: {{resultado}}</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
