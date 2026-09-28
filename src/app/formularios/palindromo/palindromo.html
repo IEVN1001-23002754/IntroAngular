@@ -1,1 +1,29 @@
-<p>palindromo works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <div style="padding: 20px;">
+            <h2>Analizador de Frases</h2>
+
+            <!-- Input de texto donde el usuario escribe la frase -->
+            <label for="fraseInput">Escribe una frase: </label>
+            <input 
+                id="fraseInput"
+                type="text" 
+                [(ngModel)]="frase" 
+                placeholder="Ej. Anita lava la tina" 
+            >
+            <button (click)="analizarFrase()" style="padding: 5px 10px;">Analizar</button>
+
+            <div>
+                <p><strong>{{ resultadoVocales }}</strong></p>
+                <p><strong>{{ resultadoConsonantes }}</strong></p>
+                <p><strong>{{ resultadoPalindromo }}</strong></p>
+            </div>
+        </div>
+    </body>
+</html>
