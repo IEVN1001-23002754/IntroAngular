@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   standalone: false,
   templateUrl: './usuario.html'
 })
+
 export class Usuario 
 {
   usuario_correcto: string = "admin";
