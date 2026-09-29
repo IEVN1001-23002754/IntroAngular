@@ -27,9 +27,6 @@ export class Usuario
       this.resultado = "La contraseña no es válida.";
     } 
 
-    else 
-    {
-      this.resultado = `¡Bienvenido al sistema, ${this.usuario_ingresado}!`;
-    }
+    else { this.resultado = `¡Bienvenido al sistema, ${this.usuario_ingresado}!`; }
   }
 }

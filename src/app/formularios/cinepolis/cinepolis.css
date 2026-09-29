@@ -1,0 +1,141 @@
+::ng-deep body 
+{
+  background-image: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1920&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #333;
+  min-height: 100vh;
+}
+
+.card 
+{
+  border: none !important;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+.card-header 
+{
+  background: linear-gradient(135deg, #0d5cff 0%, #003db3 100%);
+  border-bottom: 4px solid #ffcc00;
+}
+
+.card-header h1 
+{
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+.card-header p 
+{
+  color: #ffcc00 !important;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+}
+
+.bg-custom-blue 
+{
+  background-color: #f4f6f9;
+}
+
+fieldset 
+{
+  background-color: #ffffff;
+  border: 1px solid #e1e8ed;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+}
+
+fieldset:hover 
+{
+  box-shadow: 0 6px 16px rgba(13, 92, 255, 0.08);
+}
+
+legend 
+{
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0d5cff;
+  background-color: #eaf0ff;
+  padding: 4px 14px;
+  border-radius: 20px;
+  border: 1px solid #cce0ff;
+  float: none;
+  width: auto;
+}
+
+.form-control 
+{
+  border-radius: 8px;
+  border: 1.5px solid #dcdfe6;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-control:focus 
+{
+  border-color: #0d5cff;
+  box-shadow: 0 0 0 4px rgba(13, 92, 255, 0.15);
+}
+
+.form-label 
+{
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.btn-primary 
+{
+  background: linear-gradient(135deg, #0d5cff 0%, #0043cc 100%);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(13, 92, 255, 0.3);
+  transition: all 0.2s;
+}
+
+.btn-primary:hover 
+{
+  background: linear-gradient(135deg, #0049db 0%, #003299 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(13, 92, 255, 0.4);
+}
+
+.btn-secondary 
+{
+  background-color: #6c757d;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover 
+{
+  background-color: #5a6268;
+  transform: translateY(-1px);
+}
+
+/* Caja de Valor a Pagar */
+.fs-3.fw-bold.text-success 
+{
+  background: linear-gradient(135deg, #e8f8f0 100%, #d4efdf 0%);
+  border: 2px dashed #2ecc71;
+  border-radius: 10px;
+  color: #27ae60;
+  letter-spacing: 1px;
+}
